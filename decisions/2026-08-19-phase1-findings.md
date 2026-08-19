@@ -8,10 +8,30 @@ Shop Analyzer) + direct Etsy shop inspection · **Rubric:** `2026-08-19-phase1-r
 
 ---
 
+> ## ⚠ CORRECTED 2026-08-19 — read this first
+>
+> The original score of 83.5 was **overstated due to a search artifact**. Corrections:
+>
+> 1. **Competition was understated ~8×.** "murder mystery game printable" returns 2,533
+>    listings, but that is a narrow-phrase artifact. **"murder mystery" = 21,155** and
+>    **"logic puzzle" = 8,285.** The real ratio vs cross stitch is ~1:19, not 1:156.
+> 2. **The logic-puzzle segment is essentially one shop.** CypherBlake holds both #1 and
+>    #2; revenue falls off a cliff to $672 immediately below them. That is one seller's
+>    success, not a broad healthy market.
+> 3. **Copycats are already undercutting.** AtelierDesMysteres — 1 month old, 400% growth
+>    — clones the exact mechanic ("Eliminate 20,000 First Names") at **$5.78** vs
+>    CypherBlake's €11.29. Price erosion has already begun.
+> 4. **Seasonality unresolved.** Captured 19 Aug; mystery/party categories ramp into
+>    Halloween. The 400–1000% growth rates are equally consistent with seasonal onset.
+>
+> **Revised score: 74.5 / 95** (demand 4→3, price tolerance 5→4, competition quality 5→3).
+> Still ranked #1, but cross stitch at 71.0 is now within noise. **Not a lock.**
+> Requires the systematic sweep + seasonality resolution before the niche is chosen.
+
 ## Recommendation
 
 **Printable murder-mystery / logic-elimination puzzle books (PDF, instant download).**
-Weighted score **83.5 / 95** — 12.5 points clear of the next candidate.
+Original score 83.5 / 95 — **corrected to 74.5** (see box above). Provisional #1, not final.
 
 ---
 
