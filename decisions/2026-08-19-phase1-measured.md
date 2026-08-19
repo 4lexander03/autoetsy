@@ -78,9 +78,104 @@ testing; they are not generatable, so automation provides no product edge there.
 
 ---
 
-## Recommendation: cross-stitch pattern bundles
+## Extended measurement — full candidate set
 
-**Best measured combination of market openness and generatability.**
+Motivated by a strategic observation: the image→grid-chart algorithm is not cross-stitch
+specific. It also serves knitting colorwork, tapestry crochet, perler beads, punch needle
+and plastic canvas. If those markets are open too, one engine serves several. Measured:
+
+| Category | **W₆** | Generatable | Deliverable automatable |
+|---|---|---|---|
+| **wedding invitation template** | **160** | Medium | **No — Canva/Templett, manual setup** |
+| crochet pattern pdf | 140 | No | n/a |
+| **machine embroidery design** | **31** | **High** | **Yes — stitch files** |
+| digital planner | 27 | Medium | Partly |
+| printable wall art | 18 | Medium | Yes (but AI-art policy risk) |
+| stl file 3d print | 13 | Medium | Yes |
+| cross stitch pattern pdf | 12 | High | Yes |
+| quilt pattern pdf | 12 | Low | Yes |
+| sewing pattern pdf | 12 | Low | Yes |
+| svg bundle cricut | 12 | High | Yes |
+| knitting pattern pdf | 8 | Medium | Yes |
+| murder mystery | 8 | High | Yes |
+| notion template | 8 | Medium | Partly |
+| teacher classroom printable | 6 | Medium | Partly |
+| procreate brushes | 5 | Medium | Yes |
+| coloring pages printable | 3 | High | Yes |
+| budget planner spreadsheet | 2 | Medium-High | Yes |
+| laser cut file svg | 2 | High | Yes |
+| perler bead pattern | **0** | High | Yes |
+
+The two most open markets are **not usable**: wedding invitations deliver editable Canva
+templates (no meaningful API — every SKU is manual studio work), and crochet patterns need
+physical design and testing. Openness alone is not the answer; openness **and** an
+automatable deliverable is.
+
+---
+
+## Recommendation: machine-embroidery fonts & monogram alphabets
+
+**W₆ = 31 — the highest of any category with a genuinely automatable deliverable, 2.5×
+cross stitch. W₁ₖ = 59, so newcomer share is 53%: the market is genuinely open, not
+incumbent-locked.**
+
+### Why this one, specifically
+
+Reading the actual winning listings, the category is dominated by **fonts and monogram
+alphabets**, not pictorial designs:
+
+- "BX Embroidery Fonts Bundle: 600 Font Pack"
+- "70 BX Embroidery Fonts 0.5" 0.75" 1" 1.25" 1.5" 1.75" 2" Sizes, Monogram Alphabet"
+- "Block Shadow Embroidery Font, 9 Sizes, A-Z sorted, Fill Stitch Monogram"
+- "Fishtail Monogram 2 Color Embroidery Font, 5 Sizes 8 Formats + BX"
+- "3D Puff Foam Embroidery Machine Fonts Bundle"
+
+**The advertised value is literally the combinatorial expansion**: letters × sizes × stitch
+types × machine formats. "6 Sizes, 8 Formats + BX" is the selling point. A hand-digitiser
+produces one alphabet slowly; a generator produces 26 letters × 9 sizes × 11 formats — thousands
+of files — deterministically, with machine-verifiable output.
+
+**This is the exception the generatability/commoditization tension predicts should exist:**
+a category where generation *is* the product value rather than a shortcut around craft, and
+where the tedium is the barrier to entry.
+
+### Observed economics
+
+| Shop | Price | Rev/mo | Age | Growth |
+|---|---|---|---|---|
+| BlueGemEmbroidery | $19.70 | $6,580 | 4 mo | 400% |
+| BlueGemEmbroidery | $17.00 | $5,950 | 10 mo | 600% |
+| MoziCraft | $12.00 | $5,436 | 7 mo | 31% |
+| RetroStitchArt | $35.86 | $4,841 | 10 mo | 33% |
+| NinviaStore | $79.90 | $3,835 | 8 mo | 0% |
+| HandmoribyLucia | $26.12 | $3,187 | 3 mo | 1100% |
+
+Sweet spot $17–36, clear of the €10 German floor. Multiple recent entrants at $3–6.5k/mo.
+
+### The critical constraint: font licensing
+
+Digitising someone else's typeface and selling it is an IP problem, and OFL fonts do not
+solve it (OFL forbids selling the font alone and requires derivatives stay OFL).
+
+**Resolution: generate letterforms parametrically rather than digitising existing type.**
+The best-selling styles — fishtail, block shadow, diamond, circular, 3D puff, satin
+monogram — are *geometric constructions*, not typefaces. Building them from parametric
+skeletons sidesteps licensing entirely and is exactly the kind of generator this project
+was conceived around. Any use of third-party type requires an explicit embroidery/commercial
+licence and must be treated as a hard gate.
+
+### Honest weaknesses
+
+- **Domain complexity is real.** Good digitising means stitch direction, density, underlay,
+  pull compensation, and push-pull distortion. Bad output ruins fabric and earns 1-star
+  reviews. This is a harder engine than a PDF puzzle generator.
+- **Output verification needs physical testing** — at minimum a machine or a tester. We can
+  verify files parse and stitch counts are sane, but not that they *sew well*, and that gap
+  is where the reviews live.
+- **Format coverage is table stakes** — PES, DST, JEF, EXP, VP3, HUS, XXX, and BX. Missing
+  formats means missing buyers.
+- **Denominator caveat:** W₆ counts depend on search-string breadth, which differs between
+  categories. Absolute comparisons are indicative, not exact.
 
 - **W₆ = 12** — twelve listings created in the last six months earning $1,000+/month.
   Six times budget spreadsheets, and unlike murder mystery it is not one shop.
